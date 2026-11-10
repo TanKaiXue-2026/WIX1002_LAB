@@ -17,7 +17,25 @@ public class q4 {
             System.out.println("");
         }
         
-        mat[0][0]=
+        newmat[0][0]=mat[2][0];
+        newmat[1][0]=mat[2][1];
+        newmat[2][0]=mat[2][2];
+        newmat[0][1]=mat[1][0];
+        newmat[1][1]=mat[1][1];
+        newmat[2][1]=mat[1][2];
+        newmat[0][2]=mat[0][0];
+        newmat[1][2]=mat[0][1];
+        newmat[2][2]=mat[0][2];
+        
+        System.out.println("");
+        System.out.println("After rotates 90 degree clockwise");
+        for (int i=0;i<3;i++){
+            for (int j=0;j<3;j++){
+                mat[i][j]=rand.nextInt(10);
+                System.out.print(newmat[i][j]+" ");
+            }
+            System.out.println("");
+        }
         
     }
 }
